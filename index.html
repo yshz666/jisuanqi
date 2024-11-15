@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1.css">
+    <link rel="stylesheet" href="shezhi.css">
+    <title>Scientific Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="result" disabled>
+        <div class="buttons">
+            <button title="清空输入" onclick="clearResult()">C</button>
+            <button title="输入数字 1" onclick="appendToResult('1')">1</button>
+            <button title="输入数字 2" onclick="appendToResult('2')">2</button>
+            <button title="输入数字 3" onclick="appendToResult('3')">3</button>
+            <button title="加法" onclick="appendToResult('+')">+</button>
+            <button title="输入数字 4" onclick="appendToResult('4')">4</button>
+            <button title="输入数字 5" onclick="appendToResult('5')">5</button>
+            <button title="输入数字 6" onclick="appendToResult('6')">6</button>
+            <button title="减法" onclick="appendToResult('-')">-</button>
+            <button title="输入数字 7" onclick="appendToResult('7')">7</button>
+            <button title="输入数字 8" onclick="appendToResult('8')">8</button>
+            <button title="输入数字 9" onclick="appendToResult('9')">9</button>
+            <button title="乘法" onclick="appendToResult('*')">*</button>
+            <button title="输入数字 0" onclick="appendToResult('0')">0</button>
+            <button title="小数点" onclick="appendToResult('.')">.</button>
+            <button title="计算结果" onclick="calculateResult()">=</button>
+            <button title="除法" onclick="appendToResult('/')">/</button>
+            <button title="平方根" onclick="appendToResult('Math.sqrt(')">√</button>
+            <button title="平方" onclick="appendToResult('Math.pow(')">x²</button>
+            <button title="对数" onclick="appendToResult('Math.log(')">log</button>
+            <button title="正弦" onclick="appendToResult('Math.sin(')">sin</button>
+            <button title="余弦" onclick="appendToResult('Math.cos(')">cos</button>
+            <button title="正切" onclick="appendToResult('Math.tan(')">tan</button>
+            <button title="反正弦" onclick="appendToResult('Math.asin(')">asin</button>
+            <button title="反余弦" onclick="appendToResult('Math.acos(')">acos</button>
+            <button title="反正切" onclick="appendToResult('Math.atan(')">atan</button>
+            <button title="指数" onclick="appendToResult('e^')">e^x</button>
+            <button title="自然对数" onclick="appendToResult('ln(')">ln</button>
+            <button title="π" onclick="appendToResult(Math.PI)">π</button>
+            <button title="e" onclick="appendToResult(Math.E)">e</button>
+            <button title="绝对值" onclick="appendToResult('Math.abs(')">|x|</button>
+            <button title="取整" onclick="appendToResult('Math.floor(')">⌊x⌋</button>
+            <button title="向上取整" onclick="appendToResult('Math.ceil(')">⌈x⌉</button>
+            <button title="四舍五入" onclick="appendToResult('Math.round(')">round</button>
+            <button title="阶乘" onclick="appendToResult('factorial(')">n!</button>
+            <button title="随机数" onclick="appendToResult('Math.random()')">rand</button>
+            <button title="最大值" onclick="appendToResult('Math.max(')">max</button>
+            <button title="最小值" onclick="appendToResult('Math.min(')">min</button>
+            <button title="对数以10为底" onclick="appendToResult('Math.log10(')">log10</button>
+            <button title="对数以2为底" onclick="appendToResult('Math.log2(')">log2</button>
+            <button title="左括号" onclick="appendToResult('(')">(</button>
+            <button title="右括号" onclick="appendToResult(')')">)</button>
+            <button title="设置" onclick="toggleSettings()">设置</button>
+        </div>
+        <div id="settings" class="settings" style="display: none;">
+            <h3>设置</h3>
+            <label for="themeSelect">选择主题:</label>
+            <select id="themeSelect" onchange="changeTheme()">
+                <option value="default">亮色（默认）</option>
+                <option value="dark">暗色</option>
+                <option value="gold">金色</option>
+                <option value="blue">蓝色</option>
+                <option value="green">绿色</option>
+            </select>
+            <button onclick="toggleSettings()">关闭</button>
+        </div>
+        <div id="history" class="history">
+            <h3>计算记录</h3>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+    <script src="1.js"></script>
+</body>
+</html>

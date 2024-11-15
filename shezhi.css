@@ -1,0 +1,85 @@
+.settings {
+    padding: 20px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* 亮色（默认）主题样式 */
+body.default,
+body.light {
+    background-color: #ffffff; /* 亮色背景 */
+    color: #000000; /* 黑色文本 */
+}
+
+body.default .settings,
+body.light .settings {
+    background-color: #f0f0f0; /* 亮色背景 */
+    color: #000000; /* 黑色文本 */
+}
+
+/* 暗色主题 */
+body.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark .settings {
+    background-color: #1e1e1e; /* 暗色背景 */
+    color: #ffffff; /* 白色文本 */
+}
+
+/* 金色主题 */
+body.gold {
+    background-color: #FFD700; /* 金色 */
+    color: #000000;
+}
+
+body.gold .settings {
+    background-color: #FFD700; /* 金色背景 */
+    color: #000000; /* 黑色文本 */
+}
+
+/* 蓝色主题 */
+body.blue {
+    background-color: #1E90FF; /* 蓝色 */
+    color: #ffffff;
+}
+
+body.blue .settings {
+    background-color: #1E90FF; /* 蓝色背景 */
+    color: #ffffff; /* 白色文本 */
+}
+
+/* 绿色主题 */
+body.green {
+    background-color: #32CD32; /* 绿色 */
+    color: #000000;
+}
+
+body.green .settings {
+    background-color: #32CD32; /* 绿色背景 */
+    color: #000000; /* 黑色文本 */
+}
+
+/* 为计算器添加主题样式 */
+.calculator.default,
+.calculator.light {
+    background-color: #f0f0f0; /* 亮色主题 */
+}
+
+.calculator.dark {
+    background-color: #1e1e1e; /* 暗色主题 */
+}
+
+.calculator.gold {
+    background-color: #FFD700; /* 金色主题 */
+}
+
+.calculator.blue {
+    background-color: #1E90FF; /* 蓝色主题 */
+}
+
+.calculator.green {
+    background-color: #32CD32; /* 绿色主题 */
+}
